@@ -1,4 +1,4 @@
-package net.kosto238.anyxel2csv;
+package net.kosto238.anyxel2csv.wrappers;
 
 import jxl.Sheet;
 import jxl.Workbook;
@@ -65,7 +65,7 @@ public class JXLS_XLS2CSV {
 		}
 	}
 
-    List<String> getOutputFileNames(){
+    public List<String> getOutputFileNames(){
         return fileNames;
     }
 

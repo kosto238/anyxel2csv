@@ -1,6 +1,7 @@
-package net.kosto238.anyxel2csv
+package net.kosto238.anyxel2csv.wrappers
 
 import groovy.transform.CompileStatic
+import net.kosto238.anyxel2csv.wrappers.POI_XLS2CSV
 import org.junit.*
 
 /**

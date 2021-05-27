@@ -1,5 +1,6 @@
-package net.kosto238.anyxel2csv
+package net.kosto238.anyxel2csv.wrappers
 
+import net.kosto238.anyxel2csv.wrappers.FastExcel_XLS2CSV
 import org.junit.*
 
 import java.nio.file.Files

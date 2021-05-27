@@ -1,4 +1,4 @@
-package net.kosto238.anyxel2csv;
+package net.kosto238.anyxel2csv.wrappers;
 
 import edu.npu.fastexcel.*;
 
@@ -47,7 +47,7 @@ public class FastExcel_XLS2CSV {
 		workBook.close();
 	}
 
-	List<String> getOutputFileNames(){
+	public List<String> getOutputFileNames(){
 		return fileNames;
 	}
 

@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==================================================================== */
 
-package net.kosto238.anyxel2csv;
+package net.kosto238.anyxel2csv.wrappers;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;

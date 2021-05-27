@@ -1,4 +1,4 @@
-package net.kosto238.anyxel2csv;
+package net.kosto238.anyxel2csv.wrappers;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;

@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-package net.kosto238.anyxel2csv;
+package net.kosto238.anyxel2csv.wrappers;
 
 import org.apache.poi.hssf.eventusermodel.EventWorkbookBuilder.SheetRecordCollectingListener;
 import org.apache.poi.hssf.eventusermodel.*;
