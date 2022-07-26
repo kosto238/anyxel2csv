@@ -38,7 +38,7 @@ public class ExcelToCsvFileConverter {
                 JXLS_XLS2CSV handle = new JXLS_XLS2CSV(xls);
                 handle.process();
                 List<String> outFiles = handle.getOutputFileNames();
-                if (outFiles != null && outFiles.size() > 0)
+                if (outFiles != null && !outFiles.isEmpty())
                     return new File(outFiles.get(0));
             } catch (Exception e2) {
                 FastExcel_XLS2CSV handle = new FastExcel_XLS2CSV(xls);
@@ -48,7 +48,7 @@ public class ExcelToCsvFileConverter {
                     excelException.printStackTrace();
                 }
                 List<String> outFiles = handle.getOutputFileNames();
-                if (outFiles != null && outFiles.size() > 0)
+                if (outFiles != null && !outFiles.isEmpty())
                     return new File(outFiles.get(0));
             }
         } finally {
@@ -72,17 +72,13 @@ public class ExcelToCsvFileConverter {
         POI_XLSX2CSV handle = new POI_XLSX2CSV(xlsx.toPath().toString(), -1);
         try {
             handle.process();
-        } catch (OpenXML4JException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
+        } catch (OpenXML4JException | ParserConfigurationException | SAXException e) {
             e.printStackTrace();
         }
         //log.info("$fname converted to CSV")
         List<String> outFiles = handle.getOutputFileNames();
 
-        if (outFiles != null && outFiles.size() > 0)
+        if (outFiles != null && !outFiles.isEmpty())
             return new File(outFiles.get(0));
 
         return null;
